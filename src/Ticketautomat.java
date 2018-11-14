@@ -30,7 +30,7 @@ class Ticketautomat {
     }
     
     /*######################################################################
-    HILFSMETHODEN (Zwischenrechnungen und schönere Konsolen-Ausgaben usw.)
+    HILFSMETHODEN (Zwischenrechnungen, schönere Konsolen-Ausgaben usw.)
     ######################################################################*/
     
     //Zeigt den Status des Wechselgeldvorrats
