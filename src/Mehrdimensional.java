@@ -104,6 +104,7 @@ public class Mehrdimensional {
     }
 
     // Hilfsmethode: Anzahl an Stellen in einer Integer-Zahl
+    // Notwendig um bei showQuadrat() entsprechend viele Leerzeichen einzufügen, damit die Zahlen in der Konsole gut ausgerichtet sind.
     private static int getDigits(int number) {
         if (number < 100000) {
             if (number < 100) {
