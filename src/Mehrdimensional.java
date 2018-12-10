@@ -35,7 +35,7 @@ class Mehrdimensional {
     AUFGABEN: Magisches Quadrat
     ########################## */
 
-    public static void magischesQuadrat(int n) {
+    private static void magischesQuadrat(int n) {
 
         // Erstes wichtiges Kriterium
         if(n%2 == 0) {
