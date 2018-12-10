@@ -1,6 +1,6 @@
-public class Mehrdimensional {
+class Mehrdimensional {
 
-    private static char [][] t = {  { 'a', 'b', 'c', 'd'  },
+    private static final char [][] t = {  { 'a', 'b', 'c', 'd'  },
                                     { 'e', 'f', 'g', 'h'  },
                                     { 'i', 'j', 'k', 'l'  } };
 
@@ -92,12 +92,12 @@ public class Mehrdimensional {
         for(int i = 0; i < quadrat[0].length; i++) {
             for(int j = 0; j < quadrat[0].length; j++) {
                 // Leerzeichen vor die Zahlen wenn sie entsprechend klein sind
-                String result = "";
+                StringBuilder result = new StringBuilder();
                 for(int m = 0; m < maximaleZahlengroesse-getDigits(quadrat[i][j]); m++) {
-                    result = result + " ";
+                    result.append(" ");
                 }
 
-                System.out.print(result + quadrat[i][j] + " ");
+                System.out.print(result.toString() + quadrat[i][j] + " ");
             }
             System.out.println();
         }

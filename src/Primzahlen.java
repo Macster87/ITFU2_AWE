@@ -1,4 +1,4 @@
-public class Primzahlen {
+class Primzahlen {
     private static boolean isPrime(long number) {
 
         int i = 2;

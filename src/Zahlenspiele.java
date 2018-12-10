@@ -3,9 +3,9 @@ class Zahlenspiele {
     // Wandelt eine Zahl in eine String Zahl um mit führenden Nullen
     private static String toThree(int zahl) {
         if (zahl < 10) {
-            return "00" + Integer.toString(zahl);
+            return "00" + zahl;
         } else if (zahl <= 99) {
-            return "0" + Integer.toString(zahl);
+            return "0" + zahl;
         }
         return Integer.toString(zahl);
     }
@@ -47,7 +47,7 @@ class Zahlenspiele {
 
         // Formatierung für einstellige Zahlen
         if (zahl < 10) {
-            return " " + Integer.toString(zahl);
+            return " " + zahl;
         }
 
         return Integer.toString(zahl);

@@ -1,12 +1,11 @@
 import java.util.Scanner;
-import java.util.Arrays;
 
-public class Wahl {
+class Wahl {
 
-    private static int anzahlKandidaten = 20;
+    private static final int anzahlKandidaten = 20;
 
-    private static int[] liste = new int[anzahlKandidaten+1];
-    private static Scanner input = new Scanner(System.in);
+    private static final int[] liste = new int[anzahlKandidaten+1];
+    private static final Scanner input = new Scanner(System.in);
     private static double[] prozentliste = new double[anzahlKandidaten+1];
     private static int gesamtStimmen = 0;
 
