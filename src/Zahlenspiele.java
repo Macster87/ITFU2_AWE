@@ -75,8 +75,20 @@ class Zahlenspiele {
 
     }
 
+    private static void aufgabe1() {
+        int i = 1;
+        int result = 0;
+        while(i<1000) {
+            if(i%3 == 0 || i%5 == 0 || i%10 == 0) {
+                result += i;
+            }
+            i++;
+        }
+        System.out.println(result);
+    }
+
     public static void main(String[] args) {
-        System.out.println("# Zahlentafel #########################################");
+        /*System.out.println("# Zahlentafel #########################################");
         System.out.println();
         
         zahlentafel(7);
@@ -88,5 +100,7 @@ class Zahlenspiele {
         nummernschloss();
 
         System.out.println();
+        */
+        aufgabe1();
     }
 }
