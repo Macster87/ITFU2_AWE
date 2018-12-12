@@ -1,5 +1,9 @@
 class Mehrdimensional {
 
+    /* #######################################
+    AUFGABENTEIL: Mehrdimensionales Array
+    ####################################### */
+
     private static final char [][] t = {  { 'a', 'b', 'c', 'd'  },
                                     { 'e', 'f', 'g', 'h'  },
                                     { 'i', 'j', 'k', 'l'  } };
@@ -31,9 +35,9 @@ class Mehrdimensional {
         }
     }
 
-    /* ##########################
-    AUFGABEN: Magisches Quadrat
-    ########################## */
+    /* #######################################
+    AUFGABENTEIL: Magisches Quadrat
+    ####################################### */
 
     private static void magischesQuadrat(int n) {
 
@@ -92,6 +96,8 @@ class Mehrdimensional {
         for(int i = 0; i < quadrat[0].length; i++) {
             for(int j = 0; j < quadrat[0].length; j++) {
                 // Leerzeichen vor die Zahlen wenn sie entsprechend klein sind
+                // Der Stringbuilder wurde von der IDE vorgeschlagen, im Grunde ist es eine andere Art von
+                // String = String + String um die entsprechende Anzahl an Leerzeichen voranzustellen
                 StringBuilder result = new StringBuilder();
                 for(int m = 0; m < maximaleZahlengroesse-getDigits(quadrat[i][j]); m++) {
                     result.append(" ");
@@ -99,12 +105,12 @@ class Mehrdimensional {
 
                 System.out.print(result.toString() + quadrat[i][j] + " ");
             }
-            System.out.println();
+            System.out.println(); // Neue Zeile
         }
     }
 
     // Hilfsmethode: Anzahl an Stellen in einer Integer-Zahl
-    // Notwendig um bei showQuadrat() entsprechend viele Leerzeichen einzufügen, damit die Zahlen in der Konsole gut ausgerichtet sind.
+    // Notwendig um bei showQuadrat() entsprechend viele Leerzeichen einzufügen, damit die Zahlen in der Konsole gut ausgerichtet sind
     private static int getDigits(int number) {
         if (number < 100000) {
             if (number < 100) {
@@ -146,6 +152,7 @@ class Mehrdimensional {
     }
 
     // Prüfen ob das Quadrat richtig ist, mit der Quersumme jeder Zeile, Spalte und den beiden Diagonalen
+    // Für die pure Lösung des Problems nicht notwendig.
     private static void checkQuadrat(int[][] quadrat) {
 
         boolean zeilenCheck = true;
