@@ -94,68 +94,22 @@ class Mehrdimensional {
     // Hilfsmethode zur Ausgabe des Quadrats in der Konsole, damit es schön aussieht
     private static void showQuadrat(int[][] quadrat) {
 
-        int maximaleZahlengroesse = getDigits(quadrat[0].length * quadrat[0].length);
+        // Anzahl an Stellen für die größtmögliche Zahl feststellen.
+        int maximaleZahlengroesse = String.valueOf(quadrat[0].length*quadrat[0].length).length();
 
         for(int i = 0; i < quadrat[0].length; i++) {
             for(int j = 0; j < quadrat[0].length; j++) {
-                // Leerzeichen vor die Zahlen wenn sie entsprechend klein sind
-                // Der Stringbuilder wurde von der IDE vorgeschlagen, im Grunde ist es eine andere Art von
-                // String = String + String um die entsprechende Anzahl an Leerzeichen voranzustellen
-                StringBuilder result = new StringBuilder();
-                for(int m = 0; m < maximaleZahlengroesse-getDigits(quadrat[i][j]); m++) {
-                    result.append(" ");
-                }
 
-                System.out.print(result.toString() + quadrat[i][j] + " ");
+                String output = String.format("%"+maximaleZahlengroesse+"d ",quadrat[i][j]);
+                System.out.print(output);
             }
             System.out.println(); // Neue Zeile
         }
     }
 
-    // Hilfsmethode: Anzahl an Stellen in einer Integer-Zahl
-    // Notwendig um bei showQuadrat() entsprechend viele Leerzeichen einzufügen, damit die Zahlen in der Konsole gut ausgerichtet sind
-    private static int getDigits(int number) {
-        if (number < 100000) {
-            if (number < 100) {
-                if (number < 10) {
-                    return 1;
-                } else {
-                    return 2;
-                }
-            } else {
-                if (number < 1000) {
-                    return 3;
-                } else {
-                    if (number < 10000) {
-                        return 4;
-                    } else {
-                        return 5;
-                    }
-                }
-            }
-        } else {
-            if (number < 10000000) {
-                if (number < 1000000) {
-                    return 6;
-                } else {
-                    return 7;
-                }
-            } else {
-                if (number < 100000000) {
-                    return 8;
-                } else {
-                    if (number < 1000000000) {
-                        return 9;
-                    } else {
-                        return 10;
-                    }
-                }
-            }
-        }
-    }
-
     // Prüfen ob das Quadrat richtig ist, mit der Quersumme jeder Zeile, Spalte und den beiden Diagonalen
-    // Für die pure Lösung des Problems nicht notwendig.
+    // Für die pure Lösung des Problems nicht notwendig, aber vor allem bei großen Quadraten besser als
+    // manuell nachrechnen.
     private static void checkQuadrat(int[][] quadrat) {
 
         boolean zeilenCheck = true;
