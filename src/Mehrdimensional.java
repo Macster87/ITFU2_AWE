@@ -44,7 +44,7 @@ class Mehrdimensional {
 
     private static void magischesQuadrat(int n) {
 
-        // Erstes wichtiges Kriterium
+        // Erstes wichtiges Kriterium: Die Zahl muss ungerade sein, sonst funktioniert das Ganze nicht.
         if(n%2 == 0) {
             System.out.println("Die Zahl muss ungerade sein !");
         } else {
@@ -65,24 +65,27 @@ class Mehrdimensional {
                 // Regel a)
                 // Wenn x nach oben raus geht, aber y noch im Rahmen liegt
                 if(x-1 < 0 && y+1 <= n-1) {
+                    // Koordinaten für diesen Fall setzen:
                     x = n-1;
                     y = y+1;
                 //Regel b)
                 // Wenn x im Rahmen liegt, aber y nach rechts raus geht
                 } else if(x-1 >= 0 && y+1 > n-1) {
+                    // Koordinaten für diesen Fall setzen:
                     x = x-1;
                     y = 0;
                 // Regel c)
-                // Wenn x nach oben raus geht und y nach rechts raus geht.
-                } else if(x-1 < 0 && y+1 > n-1) {
+                // Wenn x nach oben raus geht und y nach rechts raus geht ODER wenn das Feld bereits belegt ist.
+                } else if((x-1 < 0 && y+1 > n-1) || (quadrat[x-1][y+1] != 0)) {
+                    // Koordinaten für diesen Fall setzen:
                     x = x+1;
-                } else if(quadrat[x-1][y+1] != 0) {
-                    x = x+1;
+                // Ansonsten ganz normal: 1 Feld nach oben, 1 Feld nach rechts
                 } else {
                     x = x-1;
                     y = y+1;
                 }
 
+                // Zahl an den entsprechenden Koordinaten eintragen.
                 quadrat[x][y] = k;
             }
 
@@ -99,9 +102,9 @@ class Mehrdimensional {
 
         for(int i = 0; i < quadrat[0].length; i++) {
             for(int j = 0; j < quadrat[0].length; j++) {
-
-                String output = String.format("%"+maximaleZahlengroesse+"d ",quadrat[i][j]);
-                System.out.print(output);
+                // String.format() um die Zahl mit entsprechend vorangestellten Leerstellen auszugeben,
+                // damit das Quadrat in der Konsole nicht verschoben ist.
+                System.out.print(String.format("%"+maximaleZahlengroesse+"d ",quadrat[i][j]));
             }
             System.out.println(); // Neue Zeile
         }
