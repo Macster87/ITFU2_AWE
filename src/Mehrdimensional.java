@@ -8,6 +8,7 @@ class Mehrdimensional {
                                     { 'e', 'f', 'g', 'h'  },
                                     { 'i', 'j', 'k', 'l'  } };
 
+    // Aufgabe 1a)
     public static void EinsA() {
         for(int i = 0; i < 3; i++) {
             for(int j = 3; j > -1; j--) {
@@ -17,6 +18,7 @@ class Mehrdimensional {
         }
     }
 
+    // Aufgabe 1b)
     public static void EinsB() {
         for(int i = 2; i > -1; i--) {
             for(int j = 3; j > -1; j--) {
@@ -26,6 +28,7 @@ class Mehrdimensional {
         }
     }
 
+    // Aufgabe 1c)
     public static void EinsC() {
         for(int j = 0; j < 4; j++) {
             for(int i = 0; i < 3; i++) {
