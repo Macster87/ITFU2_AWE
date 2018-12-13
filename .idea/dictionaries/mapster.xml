@@ -6,14 +6,21 @@
       <w>ablegen</w>
       <w>achtzehn</w>
       <w>achtzig</w>
+      <w>allem</w>
       <w>alles</w>
       <w>andere</w>
+      <w>ansonsten</w>
       <w>aufgabe</w>
       <w>aufgaben</w>
+      <w>aufgabenteil</w>
       <w>ausgerichtet</w>
       <w>aussieht</w>
+      <w>auszugeben</w>
       <w>automatisch</w>
       <w>beiden</w>
+      <w>belegt</w>
+      <w>bereits</w>
+      <w>besser</w>
       <w>billiarde</w>
       <w>billiarden</w>
       <w>billionen</w>
@@ -23,36 +30,53 @@
       <w>diagonale</w>
       <w>diagonalen</w>
       <w>diagonalencheck</w>
+      <w>diesen</w>
       <w>dreizehn</w>
       <w>dreißig</w>
       <w>einer</w>
+      <w>eintragen</w>
       <w>einzahl</w>
       <w>einzufügen</w>
       <w>entsprechend</w>
+      <w>entsprechenden</w>
       <w>erhöhen</w>
       <w>ersteinmal</w>
       <w>erstes</w>
       <w>fehler</w>
+      <w>feld</w>
+      <w>feststellen</w>
+      <w>funktioniert</w>
       <w>fünf</w>
       <w>fünfzehn</w>
       <w>fünfzig</w>
+      <w>ganz</w>
+      <w>ganze</w>
       <w>geht</w>
+      <w>großen</w>
+      <w>größtmögliche</w>
       <w>hilfsmethode</w>
       <w>hundert</w>
       <w>kandidat</w>
       <w>kandidaten</w>
+      <w>koordinaten</w>
       <w>kriterium</w>
+      <w>leerstellen</w>
       <w>leerzeichen</w>
       <w>liegt</w>
       <w>liste</w>
+      <w>lösung</w>
       <w>magisches</w>
+      <w>manuell</w>
       <w>maximale</w>
       <w>mehrdimensional</w>
+      <w>mehrdimensionales</w>
       <w>mehrzahl</w>
       <w>milliarde</w>
       <w>milliarden</w>
       <w>millionen</w>
+      <w>nachrechnen</w>
       <w>negativ</w>
+      <w>neue</w>
       <w>neun</w>
       <w>neunzehn</w>
       <w>neunzig</w>
@@ -64,6 +88,7 @@
       <w>prozentliste</w>
       <w>prüfen</w>
       <w>quadrat</w>
+      <w>quadraten</w>
       <w>quadrats</w>
       <w>quersumme</w>
       <w>rahmen</w>
@@ -81,6 +106,7 @@
       <w>sind</w>
       <w>sonderbehandlung</w>
       <w>sonderfall</w>
+      <w>sonst</w>
       <w>spalte</w>
       <w>spalten</w>
       <w>spaltencheck</w>
@@ -91,9 +117,11 @@
       <w>ungerade</w>
       <w>ungrader</w>
       <w>ungültige</w>
+      <w>verschoben</w>
       <w>viele</w>
       <w>vierzehn</w>
       <w>vierzig</w>
+      <w>vorangestellten</w>
       <w>wahl</w>
       <w>wahldurchgang</w>
       <w>wahlvorgang</w>

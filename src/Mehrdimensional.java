@@ -98,10 +98,10 @@ class Mehrdimensional {
     private static void showQuadrat(int[][] quadrat) {
 
         // Anzahl an Stellen für die größtmögliche Zahl feststellen.
-        int maximaleZahlengroesse = String.valueOf(quadrat[0].length*quadrat[0].length).length();
+        int maximaleZahlengroesse = String.valueOf(quadrat.length*quadrat.length).length();
 
-        for(int i = 0; i < quadrat[0].length; i++) {
-            for(int j = 0; j < quadrat[0].length; j++) {
+        for(int i = 0; i < quadrat.length; i++) {
+            for(int j = 0; j < quadrat.length; j++) {
                 // String.format() um die Zahl mit entsprechend vorangestellten Leerstellen auszugeben,
                 // damit das Quadrat in der Konsole nicht verschoben ist.
                 System.out.print(String.format("%"+maximaleZahlengroesse+"d ",quadrat[i][j]));
