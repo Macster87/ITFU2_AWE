@@ -43,7 +43,7 @@ public class Pascalschedreieck {
         // Baum zeichnen
         for (int zeile = 0; zeile < d.length; zeile++) {
 
-            //Vorangestellte Leerzeichen einfügen
+            // Vorangestellte Leerzeichen einfügen
             for (int j = d.length - zeile; j > 1; j--) {
                 System.out.print(buffer);
             }
