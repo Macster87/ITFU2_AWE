@@ -1,4 +1,8 @@
+import java.util.Scanner;
+
 public class Pascalschedreieck {
+
+    private static final Scanner input = new Scanner(System.in);
 
     private static void pascal(int n) {
 
@@ -56,6 +60,7 @@ public class Pascalschedreieck {
     }
 
     public static void main(String[] args) {
-        pascal(5);
+        System.out.println("Höhe des Dreiecks eingeben: ");
+        pascal(input.nextInt());
     }
 }
