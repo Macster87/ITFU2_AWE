@@ -4,12 +4,15 @@
       <w>abbruch</w>
       <w>abgerundet</w>
       <w>ablegen</w>
+      <w>abstand</w>
       <w>achtzehn</w>
       <w>achtzig</w>
       <w>allem</w>
       <w>alles</w>
       <w>andere</w>
+      <w>anhand</w>
       <w>ansonsten</w>
+      <w>auch</w>
       <w>aufgabe</w>
       <w>aufgaben</w>
       <w>aufgabenteil</w>
@@ -17,16 +20,21 @@
       <w>aussieht</w>
       <w>auszugeben</w>
       <w>automatisch</w>
+      <w>begrenzung</w>
       <w>beiden</w>
       <w>belegt</w>
       <w>bereits</w>
       <w>besser</w>
+      <w>bestimmen</w>
+      <w>bestimmt</w>
       <w>billiarde</w>
       <w>billiarden</w>
       <w>billionen</w>
+      <w>buffercount</w>
       <w>checken</w>
       <w>checksumme</w>
       <w>damit</w>
+      <w>dessen</w>
       <w>diagonale</w>
       <w>diagonalen</w>
       <w>diagonalencheck</w>
@@ -34,6 +42,7 @@
       <w>dreizehn</w>
       <w>dreißig</w>
       <w>einer</w>
+      <w>einfügen</w>
       <w>eintragen</w>
       <w>einzahl</w>
       <w>einzufügen</w>
@@ -53,9 +62,11 @@
       <w>ganze</w>
       <w>geht</w>
       <w>großen</w>
+      <w>größten</w>
       <w>größtmögliche</w>
       <w>hilfsmethode</w>
       <w>hundert</w>
+      <w>immer</w>
       <w>kandidat</w>
       <w>kandidaten</w>
       <w>koordinaten</w>
@@ -66,6 +77,7 @@
       <w>liste</w>
       <w>lösung</w>
       <w>magisches</w>
+      <w>mainarray</w>
       <w>manuell</w>
       <w>maximale</w>
       <w>mehrdimensional</w>
@@ -74,6 +86,7 @@
       <w>milliarde</w>
       <w>milliarden</w>
       <w>millionen</w>
+      <w>mitte</w>
       <w>nachrechnen</w>
       <w>negativ</w>
       <w>neue</w>
@@ -83,6 +96,7 @@
       <w>normale</w>
       <w>notwendig</w>
       <w>oben</w>
+      <w>pascalschedreieck</w>
       <w>primzahl</w>
       <w>primzahlen</w>
       <w>prozentliste</w>
@@ -94,6 +108,7 @@
       <w>rahmen</w>
       <w>raus</w>
       <w>regel</w>
+      <w>reicht</w>
       <w>reihe</w>
       <w>richtig</w>
       <w>schön</w>
@@ -111,30 +126,36 @@
       <w>spalten</w>
       <w>spaltencheck</w>
       <w>stellen</w>
+      <w>stelligen</w>
       <w>stimme</w>
       <w>stimmen</w>
       <w>tausend</w>
       <w>ungerade</w>
       <w>ungrader</w>
       <w>ungültige</w>
+      <w>unten</w>
       <w>verschoben</w>
       <w>viele</w>
       <w>vierzehn</w>
       <w>vierzig</w>
+      <w>vorangestellte</w>
       <w>vorangestellten</w>
       <w>wahl</w>
       <w>wahldurchgang</w>
       <w>wahlvorgang</w>
+      <w>weiter</w>
       <w>wichtiges</w>
       <w>zahlengroesse</w>
       <w>zehn</w>
       <w>zehnerstelle</w>
+      <w>zeichnen</w>
       <w>zeile</w>
       <w>zeilen</w>
       <w>zeilencheck</w>
       <w>ziffern</w>
       <w>zwanzig</w>
       <w>zwölf</w>
+      <w>überschritten</w>
     </words>
   </dictionary>
 </component>

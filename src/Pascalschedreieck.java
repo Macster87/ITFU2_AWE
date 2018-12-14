@@ -30,14 +30,14 @@ public class Pascalschedreieck {
         // Die ist immer ganz unten in der Mitte.
         // Anhand dessen wird die Anzahl der vorangestellten Leerzeichen bestimmt und der
         // Abstand für z.B. printf(%6d) weiter unten. Bei max. 3-stelligen Zahlen reicht auch %4d
-        String buffer = "";
+        StringBuilder buffer = new StringBuilder();
         int buffercount = String.valueOf(d[d.length-1][d[d.length-1].length/2]).length();
         if(buffercount%2 != 0) {
             buffercount = (buffercount+1)/2;
         }
 
         for(int i = 1; i <= buffercount; i++) {
-            buffer = buffer + " ";
+            buffer.append(" ");
         }
 
         // Baum zeichnen
