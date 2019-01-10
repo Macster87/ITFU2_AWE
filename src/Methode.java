@@ -20,7 +20,7 @@ public class Methode {
      * @param input Ein beliebiges Array mit Integer-Zahlen
      * @return Die Positions-Nummer im Array der kleinsten Zahl.
      */
-    private static int getSmallestNumber(int[] input) {
+    private static int getSmallestNumberPosition(int[] input) {
 
         int smallestPosition = 0;
         int currentPosition = 0;
@@ -35,11 +35,40 @@ public class Methode {
         return smallestPosition;
     }
 
+    /**
+     * Bonus: Größte Zahl
+     * Ansonsten wie getSmallestNumberPosition()
+     * @param input Ein beliebiges Array mit Integer-Zahlen
+     * @return Die Positions-Nummer im Array der größten Zahl.
+     */
+    private static int getBiggestNumberPosition(int[] input) {
+
+        int biggestPosition = 0;
+        int currentPosition = 0;
+
+        for(int element : input) {
+            if(element > input[biggestPosition]) {
+                biggestPosition = currentPosition;
+            }
+            currentPosition++;
+        }
+
+        return biggestPosition;
+    }
+
     public static void main(String[] args) {
-        System.out.println("A1 -> " + getSmallestNumber(a1));
-        System.out.println("A2 -> " + getSmallestNumber(a2));
-        System.out.println("A3 -> " + getSmallestNumber(a3));
-        System.out.println("A4 -> " + getSmallestNumber(a4));
-        System.out.println("A5 -> " + getSmallestNumber(a5));
+        System.out.println("A1 -> " + getSmallestNumberPosition(a1));
+        System.out.println("A2 -> " + getSmallestNumberPosition(a2));
+        System.out.println("A3 -> " + getSmallestNumberPosition(a3));
+        System.out.println("A4 -> " + getSmallestNumberPosition(a4));
+        System.out.println("A5 -> " + getSmallestNumberPosition(a5));
+
+        System.out.println();
+
+        System.out.println("A1 -> " + getBiggestNumberPosition(a1));
+        System.out.println("A2 -> " + getBiggestNumberPosition(a2));
+        System.out.println("A3 -> " + getBiggestNumberPosition(a3));
+        System.out.println("A4 -> " + getBiggestNumberPosition(a4));
+        System.out.println("A5 -> " + getBiggestNumberPosition(a5));
     }
 }
