@@ -3,19 +3,27 @@
     <words>
       <w>abbruch</w>
       <w>abgerundet</w>
+      <w>ablaufen</w>
       <w>ablegen</w>
+      <w>abschnitt</w>
       <w>abstand</w>
       <w>achtzehn</w>
       <w>achtzig</w>
+      <w>algorithmus</w>
       <w>allem</w>
       <w>alles</w>
       <w>andere</w>
+      <w>anderen</w>
+      <w>anderer</w>
       <w>anhand</w>
       <w>ansonsten</w>
       <w>auch</w>
       <w>aufgabe</w>
       <w>aufgaben</w>
       <w>aufgabenteil</w>
+      <w>aufgabenzettel</w>
+      <w>aufsteigend</w>
+      <w>ausführen</w>
       <w>ausgerichtet</w>
       <w>aussieht</w>
       <w>auszugeben</w>
@@ -23,73 +31,99 @@
       <w>begrenzung</w>
       <w>beiden</w>
       <w>belegt</w>
+      <w>beliebiges</w>
       <w>bereits</w>
       <w>besser</w>
       <w>bestimmen</w>
       <w>bestimmt</w>
+      <w>bestimmung</w>
       <w>billiarde</w>
       <w>billiarden</w>
       <w>billionen</w>
       <w>buffercount</w>
       <w>checken</w>
       <w>checksumme</w>
+      <w>dabei</w>
       <w>damit</w>
+      <w>deklaration</w>
       <w>dessen</w>
       <w>diagonale</w>
       <w>diagonalen</w>
       <w>diagonalencheck</w>
+      <w>diese</w>
       <w>diesen</w>
+      <w>dieser</w>
       <w>dreiecks</w>
       <w>dreizehn</w>
       <w>dreißig</w>
+      <w>einem</w>
       <w>einer</w>
+      <w>eines</w>
       <w>einfügen</w>
       <w>eingeben</w>
       <w>eintragen</w>
       <w>einzahl</w>
       <w>einzufügen</w>
+      <w>elemente</w>
+      <w>ende</w>
       <w>entsprechend</w>
       <w>entsprechenden</w>
       <w>erhöhen</w>
       <w>ersteinmal</w>
+      <w>ersten</w>
       <w>erstes</w>
+      <w>erzeugenden</w>
+      <w>erzeugt</w>
       <w>fehler</w>
       <w>feld</w>
       <w>feststellen</w>
+      <w>funktion</w>
       <w>funktioniert</w>
+      <w>füllt</w>
       <w>fünf</w>
       <w>fünfzehn</w>
       <w>fünfzig</w>
       <w>ganz</w>
       <w>ganze</w>
       <w>geht</w>
+      <w>gewähltem</w>
       <w>großen</w>
       <w>größten</w>
       <w>größtmögliche</w>
+      <w>hilfsfunktion</w>
       <w>hilfsmethode</w>
       <w>hundert</w>
       <w>höhe</w>
       <w>immer</w>
+      <w>jedoch</w>
+      <w>jenes</w>
       <w>kandidat</w>
       <w>kandidaten</w>
+      <w>klasse</w>
+      <w>kleinsten</w>
       <w>koordinaten</w>
       <w>kriterium</w>
       <w>leerstellen</w>
       <w>leerzeichen</w>
+      <w>letzten</w>
       <w>liegt</w>
       <w>liste</w>
+      <w>länge</w>
       <w>lösung</w>
       <w>magisches</w>
       <w>mainarray</w>
       <w>manuell</w>
       <w>maximale</w>
+      <w>maximalgrenze</w>
       <w>mehrdimensional</w>
       <w>mehrdimensionales</w>
       <w>mehrzahl</w>
       <w>milliarde</w>
       <w>milliarden</w>
       <w>millionen</w>
+      <w>misst</w>
       <w>mitte</w>
+      <w>möchte</w>
       <w>nachrechnen</w>
       <w>negativ</w>
       <w>neue</w>
@@ -125,13 +159,21 @@
       <w>sonderbehandlung</w>
       <w>sonderfall</w>
       <w>sonst</w>
+      <w>sorticus</w>
+      <w>sortieren</w>
+      <w>sortiert</w>
       <w>spalte</w>
       <w>spalten</w>
       <w>spaltencheck</w>
+      <w>speedtest</w>
+      <w>spezielle</w>
+      <w>startposition</w>
+      <w>stelle</w>
       <w>stellen</w>
       <w>stelligen</w>
       <w>stimme</w>
       <w>stimmen</w>
+      <w>suche</w>
       <w>tausend</w>
       <w>ungerade</w>
       <w>ungrader</w>
@@ -143,11 +185,14 @@
       <w>vierzig</w>
       <w>vorangestellte</w>
       <w>vorangestellten</w>
+      <w>vorgegebene</w>
+      <w>vorwärts</w>
       <w>wahl</w>
       <w>wahldurchgang</w>
       <w>wahlvorgang</w>
       <w>weiter</w>
       <w>wichtiges</w>
+      <w>wurde</w>
       <w>zahlengroesse</w>
       <w>zehn</w>
       <w>zehnerstelle</w>
@@ -155,9 +200,16 @@
       <w>zeile</w>
       <w>zeilen</w>
       <w>zeilencheck</w>
+      <w>zeit</w>
       <w>ziffern</w>
+      <w>zufalls</w>
+      <w>zufallsgenerator</w>
+      <w>zufallszahlen</w>
+      <w>zugleich</w>
+      <w>zusätzlichem</w>
       <w>zwanzig</w>
       <w>zwölf</w>
+      <w>ähnlich</w>
       <w>überschritten</w>
     </words>
   </dictionary>
