@@ -135,7 +135,16 @@ public class Sorticus {
 
     public static void main(String[] args) {
         // showArray(bubbleSort(a5));
-        System.out.println(speedtest(17));
+        //System.out.println(speedtest(17));
+
+        int i = 0;
+        int sum = 0;
+
+        while(i < 30) {
+            sum = sum + speedtest(129);
+            i++;
+        }
+        System.out.println(sum/i);
     }
 
 }
