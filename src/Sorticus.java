@@ -77,6 +77,27 @@ public class Sorticus {
         return input;
     }
 
+    private static int[] bogoSort(int[] input) {
+
+        while (!isSorted(input)) { // Prüfen, ob sortiert
+            int a = rnd.nextInt(input.length);
+            int b = rnd.nextInt(input.length);
+
+            int tmp = input[a];
+            input[a] = input[b];
+            input[b] = tmp;
+        }
+
+        return input;
+    }
+
+    private static boolean isSorted(int[] input) {
+        for(int i = 0; i < input.length-1; i++) {
+            if(input[i] >= input[i+1]) return false;
+        }
+        return true;
+    }
+
     /**
      * Hilfsfunktion zur Ausgabe eines Arrays in der Konsole
      * @param input Ein beliebiges Array mit Integer-Zahlen
@@ -124,7 +145,7 @@ public class Sorticus {
             array[i] = rnd.nextInt(n);
         }
         long start = System.nanoTime();
-        int[] result = selectionSort(array);
+        int[] result = bogoSort(array);
         long ende = System.nanoTime();
 
         showArrayFiveFive(result);
@@ -135,16 +156,17 @@ public class Sorticus {
 
     public static void main(String[] args) {
         // showArray(bubbleSort(a5));
-        //System.out.println(speedtest(17));
+        System.out.println(speedtest(4));
 
         int i = 0;
         int sum = 0;
 
-        while(i < 30) {
-            sum = sum + speedtest(129);
-            i++;
-        }
-        System.out.println(sum/i);
+
+        //while(i < 30) {
+        //    sum = sum + speedtest(129);
+        //    i++;
+        //}
+        //System.out.println(sum/i);
     }
 
 }
