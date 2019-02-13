@@ -8,6 +8,9 @@ public class Sorticus {
     private static int[] a3 = {5, 6, 22, 80, 2};
     private static int[] a4 = {7, 8, 42, 2, 2, 4711};
     private static int[] a5 = {80, 8086, 6502, 68000, -753};
+    private static int[] a6 = {9,8,7,6,5,4,3,2,1};
+    private static int[] a7 = {1,5,17,23,43};
+    private static int[] a8 = {1,4,6,7,8,22,160,161,162};
 
     // Zufalls-Deklaration
     private static final Random rnd = new Random();
@@ -29,6 +32,79 @@ public class Sorticus {
             }
         }
         return start;
+    }
+
+    private static int partition(int[] arr, int left, int right)
+    {
+        int i = left, j = right;
+        int tmp;
+        int pivot = arr[(left + right) / 2];
+
+        while (i <= j) {
+            while (arr[i] < pivot)
+                i++;
+            while (arr[j] > pivot)
+                j--;
+            if (i <= j) {
+                tmp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = tmp;
+                i++;
+                j--;
+            }
+        }
+
+        return i;
+    }
+
+    private static void quickSort(int[] arr, int left, int right) {
+        int index = partition(arr, left, right);
+        if (left < index - 1)
+            quickSort(arr, left, index - 1);
+        if (index < right)
+            quickSort(arr, index, right);
+    }
+
+    private static int initiative(int arrayLength) {
+        int i = 1;
+        while(i < arrayLength) i = i*2;
+        return i-1;
+    }
+
+    private static int[] preSort(int[] input, int width, int offset) {
+        int temp;
+        int vergleich;
+        for(int i = 1 + offset; i < input.length; i = i + width) {
+            temp = input[i];
+            vergleich = i-(1+width);
+            while (vergleich >= 0 && temp < input[vergleich]) {
+                input[vergleich + 1 + width] = input[vergleich];
+                vergleich--;
+            }
+            input[vergleich + 1 + width] = temp;
+        }
+        return input;
+    }
+
+    /**
+     * Insertion-Sort Algorithmus
+     * Mit Dank von Andrea
+     * @param input Ein beliebiges Array mit Integer-Zahlen
+     * @return Jenes Array aufsteigend sortiert
+     */
+    private static int[] insertionSort(int[] input) {
+        int temp;
+        int vergleich;
+        for(int i = 1; i < input.length; i++) {
+            temp = input[i];
+            vergleich = i-1;
+            while (vergleich >= 0 && temp < input[vergleich]) {
+                input[vergleich + 1] = input[vergleich];
+                vergleich--;
+            }
+            input[vergleich + 1] = temp;
+        }
+        return input;
     }
 
     /**
@@ -154,14 +230,37 @@ public class Sorticus {
         return (int) (ende-start);
     }
 
+    private static int[] melt(int[] input1, int[] input2) {
+        int i = 0;
+        int pos1 = 0;
+        int pos2 = 0;
+        int[] merge = new int[input1.length+input2.length];
+
+        while (i<input1.length && pos1 <input2.length)
+        {
+            if (input1[i] < input2[pos1])
+                merge[pos2++] = input1[i++];
+            else
+                merge[pos2++] = input2[pos1++];
+        }
+
+        while (i < input1.length)
+            merge[pos2++] = input1[i++];
+        while (pos1 < input2.length)
+            merge[pos2++] = input2[pos1++];
+
+        return merge;
+    }
+
     public static void main(String[] args) {
         // showArray(bubbleSort(a5));
-        System.out.println(speedtest(4));
+        // System.out.println(speedtest(4));
 
         int i = 0;
         int sum = 0;
 
-
+        //showArray(preSort(a6, 3, 3));
+        showArray(melt(a7,a8));
         //while(i < 30) {
         //    sum = sum + speedtest(129);
         //    i++;
