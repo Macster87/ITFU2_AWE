@@ -3,14 +3,14 @@ import java.util.Random;
 
 public class Sorticus {
     // Vorgegebene Arrays
-    private static int[] a1 = {10, 20, 1, 8, 9};
-    private static int[] a2 = {1, 2, 17, 3, 8};
-    private static int[] a3 = {5, 6, 22, 80, 2};
-    private static int[] a4 = {7, 8, 42, 2, 2, 4711};
-    private static int[] a5 = {80, 8086, 6502, 68000, -753};
-    private static int[] a6 = {9,8,7,6,5,4,3,2,1};
-    private static int[] a7 = {1,5,17,23,43};
-    private static int[] a8 = {1,4,6,7,8,22,160,161,162};
+    private static final int[] a1 = {10, 20, 1, 8, 9};
+    private static final int[] a2 = {1, 2, 17, 3, 8};
+    private static final int[] a3 = {5, 6, 22, 80, 2};
+    private static final int[] a4 = {6, 7, 8, 42,12 , 11, 2, 2, 4711};
+    private static final int[] a5 = {80, 8086, 6502, 68000, -753};
+    private static final int[] a6 = {9,8,7,6,5,4,3,2,1};
+    private static final int[] a7 = {1,5,17,23,43};
+    private static final int[] a8 = {1,4,6,7,8,22,160,161,162};
 
     // Zufalls-Deklaration
     private static final Random rnd = new Random();
@@ -230,6 +230,50 @@ public class Sorticus {
         return (int) (ende-start);
     }
 
+    /**
+     * Implementierung von ShellSort
+     * @param input Array
+     * @return Zeit für das Sortieren
+     */
+    private static int[] shellSort(int[] input) {
+
+        int abstand = input.length;
+
+        // Start with a big gap, then reduce the gap
+        for (int gap = abstand/2; gap > 0; gap /= 2)
+        {
+            // Do a gapped insertion sort for this gap size.
+            // The first gap elements a[0..gap-1] are already
+            // in gapped order keep adding one more element
+            // until the entire array is gap sorted
+            for (int i = gap; i < abstand; i += 1)
+            {
+                // add a[i] to the elements that have been gap
+                // sorted save a[i] in temp and make a hole at
+                // position i
+                int temp = input[i];
+
+                // shift earlier gap-sorted elements up until
+                // the correct location for a[i] is found
+                int j;
+                for (j = i; j >= gap && input[j - gap] > temp; j -= gap)
+                    input[j] = input[j - gap];
+
+                // put temp (the original a[i]) in its correct
+                // location
+                input[j] = temp;
+            }
+        }
+        return input;
+    }
+
+    /**
+     * Verschmilzt zwei (auch unterschiedlich lange) Arrays zu einem und gibt ihn zurück.
+     * Die Länge des neuen Arrays ist immer die kombinierte Länge der beiden Inputs
+     * @param input1 Array Nummer 1
+     * @param input2 Array Nummer 2
+     * @return Zeit für das Sortieren
+     */
     private static int[] melt(int[] input1, int[] input2) {
         int i = 0;
         int pos1 = 0;
@@ -252,15 +296,45 @@ public class Sorticus {
         return merge;
     }
 
+    private static int[] mergeSort(int[] input) {
+
+        if(input.length <= 1) return input;
+
+        int[] links;
+        int[] rechts = new int[input.length/2];
+
+        if(input.length%2 == 0) {
+            links = new int[input.length/2];
+        } else {
+            links = new int[(input.length/2)+1];
+        }
+
+        // Ohne interne Funktion: for(int i = 0; i < arraysize_links; i++) links[i] = input[i];
+        System.arraycopy(input, 0, links, 0, links.length);
+        // Ohne interne Funktion: for(int i = 0; i < input.length/2; i++) rechts[i] = input[i+arraysize_links];
+        System.arraycopy(input, links.length, rechts, 0, input.length / 2);
+
+        return melt(insertionSort(links), insertionSort(rechts));
+    }
+
     public static void main(String[] args) {
         // showArray(bubbleSort(a5));
         // System.out.println(speedtest(4));
 
-        int i = 0;
-        int sum = 0;
+        //int i = 0;
+        //int sum = 0;
 
         //showArray(preSort(a6, 3, 3));
-        showArray(melt(a7,a8));
+
+        //Test für Melt()
+        //showArray(melt(a7,a8));
+
+        //Test für Shellsort()
+        //showArray(shellSort(a5));
+
+        //Test für MergeSort()
+        showArray(mergeSort(a7));
+
         //while(i < 30) {
         //    sum = sum + speedtest(129);
         //    i++;

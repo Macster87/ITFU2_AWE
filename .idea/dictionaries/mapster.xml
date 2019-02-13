@@ -17,6 +17,7 @@
       <w>anderer</w>
       <w>anhand</w>
       <w>ansonsten</w>
+      <w>arraysize</w>
       <w>auch</w>
       <w>aufgabe</w>
       <w>aufgaben</w>
@@ -40,6 +41,7 @@
       <w>billiarde</w>
       <w>billiarden</w>
       <w>billionen</w>
+      <w>bogo</w>
       <w>buffercount</w>
       <w>checken</w>
       <w>checksumme</w>
@@ -85,6 +87,7 @@
       <w>fünfzig</w>
       <w>ganz</w>
       <w>ganze</w>
+      <w>gapped</w>
       <w>geht</w>
       <w>gewähltem</w>
       <w>großen</w>
@@ -95,14 +98,18 @@
       <w>hundert</w>
       <w>höhe</w>
       <w>immer</w>
+      <w>implementierung</w>
+      <w>interne</w>
       <w>jedoch</w>
       <w>jenes</w>
       <w>kandidat</w>
       <w>kandidaten</w>
       <w>klasse</w>
       <w>kleinsten</w>
+      <w>kombinierte</w>
       <w>koordinaten</w>
       <w>kriterium</w>
+      <w>lange</w>
       <w>leerstellen</w>
       <w>leerzeichen</w>
       <w>letzten</w>
@@ -127,12 +134,14 @@
       <w>nachrechnen</w>
       <w>negativ</w>
       <w>neue</w>
+      <w>neuen</w>
       <w>neun</w>
       <w>neunzehn</w>
       <w>neunzig</w>
       <w>normale</w>
       <w>notwendig</w>
       <w>oben</w>
+      <w>ohne</w>
       <w>pascalschedreieck</w>
       <w>primzahl</w>
       <w>primzahlen</w>
@@ -153,6 +162,7 @@
       <w>sechzig</w>
       <w>sein</w>
       <w>setzen</w>
+      <w>shellsort</w>
       <w>siebzehn</w>
       <w>siebzig</w>
       <w>sind</w>
@@ -179,6 +189,9 @@
       <w>ungrader</w>
       <w>ungültige</w>
       <w>unten</w>
+      <w>unterschiedlich</w>
+      <w>vergleich</w>
+      <w>verschmilzt</w>
       <w>verschoben</w>
       <w>viele</w>
       <w>vierzehn</w>
