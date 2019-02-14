@@ -278,8 +278,12 @@ public class Sorticus {
         int i = 0;
         int pos1 = 0;
         int pos2 = 0;
+
+        // Die Größe des neuen Arrays ist die kombinierte Länge der beiden input-Arrays
         int[] merge = new int[input1.length+input2.length];
 
+        // Es wird entschieden welche Zahl aus welchem Array gerade an der Reihe ist an den großen Array angehängt
+        // zu werden. Der Positions-Integer werden danach für den jeweiligen Array um 1 erhöht.
         while (i<input1.length && pos1 <input2.length)
         {
             if (input1[i] < input2[pos1])
@@ -288,6 +292,7 @@ public class Sorticus {
                 merge[pos2++] = input2[pos1++];
         }
 
+        // Wenn die Arrays nicht gleichlang sind, wird hier der Rest des längeren Arrays angehängt.
         while (i < input1.length)
             merge[pos2++] = input1[i++];
         while (pos1 < input2.length)
@@ -297,7 +302,6 @@ public class Sorticus {
     }
 
     private static int[] mergeSort(int[] input) {
-
         // Abbruchbedingung
         if(input.length <= 1) return input;
 
