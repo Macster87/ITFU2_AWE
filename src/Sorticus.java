@@ -298,8 +298,10 @@ public class Sorticus {
 
     private static int[] mergeSort(int[] input) {
 
+        // Abbruchbedingung
         if(input.length <= 1) return input;
 
+        // Arrays erstellen und Länge bestimmen
         int[] links;
         int[] rechts = new int[input.length/2];
 
@@ -309,13 +311,14 @@ public class Sorticus {
             links = new int[(input.length/2)+1];
         }
 
+        // Arrays in Links und Rechts kopieren
+        System.arraycopy(input, 0, links, 0, links.length);
+        System.arraycopy(input, links.length, rechts, 0, input.length / 2);
         // Ohne Java.System Funktion:
         // for(int i = 0; i < arraysize_links; i++) links[i] = input[i];
-        System.arraycopy(input, 0, links, 0, links.length);
-        // Ohne Java.System Funktion:
         // for(int i = 0; i < input.length/2; i++) rechts[i] = input[i+arraysize_links];
-        System.arraycopy(input, links.length, rechts, 0, input.length / 2);
 
+        // Rekursiver Aufruf und Rückgabe
         return melt(mergeSort(links), mergeSort(rechts));
     }
 
