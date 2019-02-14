@@ -309,12 +309,14 @@ public class Sorticus {
             links = new int[(input.length/2)+1];
         }
 
-        // Ohne interne Funktion: for(int i = 0; i < arraysize_links; i++) links[i] = input[i];
+        // Ohne Java.System Funktion:
+        // for(int i = 0; i < arraysize_links; i++) links[i] = input[i];
         System.arraycopy(input, 0, links, 0, links.length);
-        // Ohne interne Funktion: for(int i = 0; i < input.length/2; i++) rechts[i] = input[i+arraysize_links];
+        // Ohne Java.System Funktion:
+        // for(int i = 0; i < input.length/2; i++) rechts[i] = input[i+arraysize_links];
         System.arraycopy(input, links.length, rechts, 0, input.length / 2);
 
-        return melt(insertionSort(links), insertionSort(rechts));
+        return melt(mergeSort(links), mergeSort(rechts));
     }
 
     public static void main(String[] args) {
