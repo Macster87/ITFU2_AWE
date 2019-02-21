@@ -40,6 +40,7 @@ public class Bruch {
     private Bruch mult(Bruch faktor) {
         Bruch result = new Bruch(faktor.getZaehler()*zaehler, faktor.getNenner()*nenner);
         result.kuerze();
+
         return result;
     }
 
@@ -50,11 +51,7 @@ public class Bruch {
     public Bruch add(Bruch summand) {
         int x = summand.getNenner();
         int kgV = x * (nenner / ggT(x,nenner));
-
-        int multiplikatorEins = kgV/summand.nenner;
-        int multiplikatorZwei = kgV/nenner;
-
-        int result = (multiplikatorZwei*zaehler) + (multiplikatorEins*summand.getZaehler());
+        int result = ((kgV/nenner)*zaehler) + ((kgV/summand.nenner)*summand.getZaehler());
 
         return new Bruch(result,kgV);
     }
@@ -73,7 +70,11 @@ public class Bruch {
     }
 
     public Bruch sub(Bruch subtrahend) {
-        return null;
+        int x = subtrahend.getNenner();
+        int kgV = x * (nenner / ggT(x,nenner));
+        int result = ((kgV/nenner)*zaehler) - ((kgV/subtrahend.nenner)*subtrahend.getZaehler());
+
+        return new Bruch(result,kgV);
     }
 
     private void kuerze() {
