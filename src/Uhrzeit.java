@@ -12,6 +12,10 @@ public class Uhrzeit {
         time = toTime(stunde ,minute ,0);
     }
 
+    public Uhrzeit(int stunde) {
+        time = toTime(stunde, 0, 0);
+    }
+
     public Uhrzeit() {
         time = 0;
     }
@@ -86,18 +90,18 @@ public class Uhrzeit {
         this.time = time;
     }
 
-    private int getHours() {
+    public int getHours() {
         int result = time/(60*60);
         return result;
     }
 
-    private int getMinutes() {
+    public int getMinutes() {
         int result = time - getHours()*60*60;
         result = result/60;
         return result;
     }
 
-    private int getSeconds() {
+    public int getSeconds() {
         int result = time - (getHours()*60*60) - (getMinutes()*60);
         return result;
     }
