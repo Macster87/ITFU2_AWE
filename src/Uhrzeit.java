@@ -58,18 +58,15 @@ public class Uhrzeit {
     }
 
     public boolean isBefore(Uhrzeit uhrzeit) {
-        if(uhrzeit.getTime() < time) return true;
-        return false;
+        return uhrzeit.getTime() < time;
     }
 
     public boolean isAfter(Uhrzeit uhrzeit) {
-        if(uhrzeit.getTime() > time) return true;
-        return false;
+        return uhrzeit.getTime() > time;
     }
 
     public boolean isEqual(Uhrzeit uhrzeit) {
-        if(uhrzeit.getTime() == time) return true;
-        return false;
+        return uhrzeit.getTime() == time;
     }
 
     public String timeDiff(Uhrzeit uhrzeit) {
@@ -91,8 +88,7 @@ public class Uhrzeit {
     }
 
     public int getHours() {
-        int result = time/(60*60);
-        return result;
+        return time/(60*60);
     }
 
     public int getMinutes() {
@@ -102,7 +98,6 @@ public class Uhrzeit {
     }
 
     public int getSeconds() {
-        int result = time - (getHours()*60*60) - (getMinutes()*60);
-        return result;
+        return time - (getHours()*60*60) - (getMinutes()*60);
     }
 }

@@ -100,11 +100,11 @@ class Mehrdimensional {
         // Anzahl an Stellen für die größtmögliche Zahl feststellen.
         int maximaleZahlengroesse = String.valueOf(quadrat.length*quadrat.length).length();
 
-        for(int i = 0; i < quadrat.length; i++) {
-            for(int j = 0; j < quadrat.length; j++) {
+        for (int[] ints : quadrat) {
+            for (int j = 0; j < quadrat.length; j++) {
                 // String.format() um die Zahl mit entsprechend vorangestellten Leerstellen auszugeben,
                 // damit das Quadrat in der Konsole nicht verschoben ist.
-                System.out.print(String.format("%"+maximaleZahlengroesse+"d ",quadrat[i][j]));
+                System.out.print(String.format("%" + maximaleZahlengroesse + "d ", ints[j]));
             }
             System.out.println(); // Neue Zeile
         }

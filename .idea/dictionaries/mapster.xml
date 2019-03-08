@@ -2,6 +2,8 @@
   <dictionary name="mapster">
     <words>
       <w>abbruch</w>
+      <w>abbruchbedingung</w>
+      <w>abgefragt</w>
       <w>abgerundet</w>
       <w>ablaufen</w>
       <w>ablegen</w>
@@ -9,20 +11,27 @@
       <w>abstand</w>
       <w>achtzehn</w>
       <w>achtzig</w>
+      <w>aktuelle</w>
       <w>algorithmus</w>
+      <w>alle</w>
       <w>allem</w>
       <w>alles</w>
       <w>andere</w>
       <w>anderen</w>
       <w>anderer</w>
+      <w>aneinanderreihen</w>
+      <w>angehängt</w>
       <w>anhand</w>
+      <w>anlegen</w>
       <w>ansonsten</w>
       <w>arraysize</w>
       <w>auch</w>
       <w>aufgabe</w>
       <w>aufgaben</w>
+      <w>aufgabenblätter</w>
       <w>aufgabenteil</w>
       <w>aufgabenzettel</w>
+      <w>aufruf</w>
       <w>aufsteigend</w>
       <w>ausführen</w>
       <w>ausgerichtet</w>
@@ -31,10 +40,13 @@
       <w>automatisch</w>
       <w>begrenzung</w>
       <w>beiden</w>
+      <w>beim</w>
+      <w>beispiel</w>
       <w>belegt</w>
       <w>beliebiges</w>
       <w>bereits</w>
       <w>besser</w>
+      <w>beste</w>
       <w>bestimmen</w>
       <w>bestimmt</w>
       <w>bestimmung</w>
@@ -42,11 +54,15 @@
       <w>billiarden</w>
       <w>billionen</w>
       <w>bogo</w>
+      <w>bruch</w>
       <w>buffercount</w>
       <w>checken</w>
       <w>checksumme</w>
       <w>dabei</w>
       <w>damit</w>
+      <w>danach</w>
+      <w>dann</w>
+      <w>dazu</w>
       <w>deklaration</w>
       <w>dessen</w>
       <w>diagonale</w>
@@ -55,6 +71,7 @@
       <w>diese</w>
       <w>diesen</w>
       <w>dieser</w>
+      <w>divisior</w>
       <w>dreiecks</w>
       <w>dreizehn</w>
       <w>dreißig</w>
@@ -63,21 +80,32 @@
       <w>eines</w>
       <w>einfügen</w>
       <w>eingeben</w>
+      <w>einsatz</w>
       <w>eintragen</w>
       <w>einzahl</w>
+      <w>einzigste</w>
       <w>einzufügen</w>
       <w>elemente</w>
       <w>ende</w>
+      <w>entschieden</w>
       <w>entsprechend</w>
+      <w>entsprechende</w>
       <w>entsprechenden</w>
+      <w>erhalten</w>
       <w>erhöhen</w>
+      <w>erhöht</w>
+      <w>ermittelt</w>
+      <w>erste</w>
       <w>ersteinmal</w>
       <w>ersten</w>
       <w>erstes</w>
+      <w>erzeugen</w>
       <w>erzeugenden</w>
       <w>erzeugt</w>
+      <w>faktor</w>
       <w>fehler</w>
       <w>feld</w>
+      <w>feldern</w>
       <w>feststellen</w>
       <w>funktion</w>
       <w>funktioniert</w>
@@ -88,28 +116,52 @@
       <w>ganz</w>
       <w>ganze</w>
       <w>gapped</w>
+      <w>gegebenen</w>
+      <w>gehen</w>
       <w>geht</w>
+      <w>gerade</w>
       <w>gewähltem</w>
+      <w>gleich</w>
+      <w>gleichen</w>
+      <w>gleichlang</w>
+      <w>gleichzeitig</w>
       <w>großen</w>
+      <w>größe</w>
+      <w>größer</w>
+      <w>größte</w>
       <w>größten</w>
       <w>größtmögliche</w>
+      <w>hier</w>
       <w>hilfsfunktion</w>
       <w>hilfsmethode</w>
+      <w>hilft</w>
       <w>hundert</w>
       <w>höhe</w>
+      <w>idee</w>
       <w>immer</w>
       <w>implementierung</w>
+      <w>indem</w>
       <w>interne</w>
+      <w>itfu</w>
       <w>jedoch</w>
+      <w>jene</w>
       <w>jenes</w>
+      <w>jeweiligen</w>
       <w>kandidat</w>
       <w>kandidaten</w>
       <w>klasse</w>
+      <w>kleiner</w>
+      <w>kleinste</w>
       <w>kleinsten</w>
       <w>kombinierte</w>
+      <w>kommt</w>
+      <w>konsoleneingabe</w>
+      <w>konstruktoren</w>
       <w>koordinaten</w>
+      <w>kopieren</w>
       <w>kriterium</w>
       <w>kuerze</w>
+      <w>könnte</w>
       <w>lange</w>
       <w>leerstellen</w>
       <w>leerzeichen</w>
@@ -117,23 +169,34 @@
       <w>liegt</w>
       <w>liste</w>
       <w>länge</w>
+      <w>längeren</w>
       <w>lösung</w>
+      <w>lösungen</w>
+      <w>machen</w>
       <w>magisches</w>
       <w>mainarray</w>
       <w>manuell</w>
       <w>maximale</w>
       <w>maximalgrenze</w>
+      <w>mehr</w>
       <w>mehrdimensional</w>
       <w>mehrdimensionales</w>
       <w>mehrzahl</w>
+      <w>meine</w>
+      <w>meisten</w>
+      <w>merken</w>
       <w>milliarde</w>
       <w>milliarden</w>
       <w>millionen</w>
+      <w>mindestabstand</w>
       <w>misst</w>
       <w>mitte</w>
+      <w>mult</w>
+      <w>multiplikator</w>
       <w>möchte</w>
       <w>nachrechnen</w>
       <w>negativ</w>
+      <w>nenner</w>
       <w>neue</w>
       <w>neuen</w>
       <w>neun</w>
@@ -148,54 +211,77 @@
       <w>primzahlen</w>
       <w>prozentliste</w>
       <w>prüfen</w>
+      <w>pyramide</w>
       <w>quadrat</w>
       <w>quadraten</w>
       <w>quadrats</w>
+      <w>quellcode</w>
       <w>quersumme</w>
       <w>rahmen</w>
       <w>raus</w>
       <w>regel</w>
       <w>reicht</w>
       <w>reihe</w>
+      <w>rekursiver</w>
       <w>richtig</w>
+      <w>rückgabe</w>
+      <w>schleife</w>
+      <w>schreiben</w>
       <w>schön</w>
       <w>sechzehn</w>
       <w>sechzig</w>
       <w>sein</w>
+      <w>sekunde</w>
       <w>setzen</w>
       <w>shellsort</w>
       <w>siebzehn</w>
       <w>siebzig</w>
+      <w>siehe</w>
       <w>sind</w>
+      <w>soll</w>
       <w>sonderbehandlung</w>
       <w>sonderfall</w>
       <w>sonst</w>
       <w>sorticus</w>
       <w>sortieren</w>
       <w>sortiert</w>
+      <w>sowie</w>
       <w>spalte</w>
       <w>spalten</w>
       <w>spaltencheck</w>
       <w>speedtest</w>
+      <w>spezial</w>
       <w>spezielle</w>
       <w>startposition</w>
+      <w>statt</w>
+      <w>steht</w>
       <w>stelle</w>
       <w>stellen</w>
       <w>stelligen</w>
       <w>stimme</w>
       <w>stimmen</w>
+      <w>stringbuilder</w>
+      <w>stunde</w>
       <w>suche</w>
+      <w>summand</w>
       <w>tausend</w>
+      <w>teil</w>
+      <w>teilen</w>
       <w>teiler</w>
+      <w>uhrzeit</w>
+      <w>umgehen</w>
       <w>ungerade</w>
       <w>ungrader</w>
       <w>ungültige</w>
       <w>unten</w>
+      <w>unter</w>
       <w>unterschiedlich</w>
       <w>vergleich</w>
       <w>verschmilzt</w>
       <w>verschoben</w>
+      <w>verwenden</w>
       <w>viele</w>
+      <w>vielfaches</w>
       <w>vierzehn</w>
       <w>vierzig</w>
       <w>vorangestellte</w>
@@ -205,12 +291,19 @@
       <w>wahl</w>
       <w>wahldurchgang</w>
       <w>wahlvorgang</w>
+      <w>wahrscheinlich</w>
       <w>weiter</w>
+      <w>welchem</w>
+      <w>werden</w>
       <w>wichtiges</w>
       <w>wurde</w>
+      <w>wäre</w>
+      <w>würde</w>
+      <w>zaehler</w>
       <w>zahlengroesse</w>
       <w>zehn</w>
       <w>zehnerstelle</w>
+      <w>zeichen</w>
       <w>zeichnen</w>
       <w>zeile</w>
       <w>zeilen</w>
@@ -221,11 +314,15 @@
       <w>zufallsgenerator</w>
       <w>zufallszahlen</w>
       <w>zugleich</w>
+      <w>zurückgegeben</w>
+      <w>zurückzugeben</w>
       <w>zusätzlichem</w>
       <w>zwanzig</w>
       <w>zwölf</w>
       <w>ähnlich</w>
+      <w>über</w>
       <w>überschritten</w>
+      <w>übungen</w>
     </words>
   </dictionary>
 </component>
