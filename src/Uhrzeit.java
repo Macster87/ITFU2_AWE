@@ -22,6 +22,9 @@ public class Uhrzeit {
 
     //Methoden
     private int toTime(int stunde, int minute, int sekunde) {
+        if(stunde > 24 || minute > 59 || sekunde > 59) {
+            throw new NumberFormatException("Ungültiges Uhrzeit-Format");
+        }
         return sekunde + (minute*60) + (stunde*60*60);
     }
 
