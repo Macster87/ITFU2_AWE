@@ -6,13 +6,11 @@ public class Paket {
 
     private String klasse;
     private double preis;
-    private int volumen;
 
     public Paket(int l, int w, int h) {
         this.length = l;
         this.width = w;
         this.height = h;
-        this.volumen = h*l*w;
 
         int sides;
         if(istWuerfel()) {
@@ -74,7 +72,7 @@ public class Paket {
     }
 
     public double getVolumen() {
-        return volumen/1000.0;
+        return (height*length*width)/1000.0;
     }
 
     public double getFlaeche() {
