@@ -8,14 +8,13 @@ public class Paket {
     private double preis;
     private int volumen;
 
-    private int sides;
-
     public Paket(int l, int w, int h) {
         this.length = l;
         this.width = w;
         this.height = h;
         this.volumen = h*l*w;
 
+        int sides;
         if(istWuerfel()) {
             sides = height + length;
         } else {
@@ -75,7 +74,7 @@ public class Paket {
     }
 
     public double getVolumen() {
-        return volumen/1000;
+        return volumen/1000.0;
     }
 
     public double getFlaeche() {
@@ -87,10 +86,7 @@ public class Paket {
     }
 
     public boolean istWuerfel() {
-        if(height == width && width == length) {
-            return true;
-        }
-        return false;
+        return height == width && width == length;
     }
 
     public static void main(String[] args) {

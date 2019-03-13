@@ -107,6 +107,8 @@
       <w>feld</w>
       <w>feldern</w>
       <w>feststellen</w>
+      <w>flaeche</w>
+      <w>fläche</w>
       <w>funktion</w>
       <w>funktioniert</w>
       <w>füllt</w>
@@ -131,6 +133,7 @@
       <w>größte</w>
       <w>größten</w>
       <w>größtmögliche</w>
+      <w>gurtmass</w>
       <w>hier</w>
       <w>hilfsfunktion</w>
       <w>hilfsmethode</w>
@@ -206,6 +209,8 @@
       <w>notwendig</w>
       <w>oben</w>
       <w>ohne</w>
+      <w>paket</w>
+      <w>paketklasse</w>
       <w>pascalschedreieck</w>
       <w>primzahl</w>
       <w>primzahlen</w>
@@ -284,6 +289,7 @@
       <w>vielfaches</w>
       <w>vierzehn</w>
       <w>vierzig</w>
+      <w>volumen</w>
       <w>vorangestellte</w>
       <w>vorangestellten</w>
       <w>vorgegebene</w>
@@ -296,9 +302,11 @@
       <w>welchem</w>
       <w>werden</w>
       <w>wichtiges</w>
+      <w>wuerfel</w>
       <w>wurde</w>
       <w>wäre</w>
       <w>würde</w>
+      <w>würfel</w>
       <w>zaehler</w>
       <w>zahlengroesse</w>
       <w>zehn</w>
