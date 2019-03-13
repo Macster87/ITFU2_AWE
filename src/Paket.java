@@ -97,11 +97,11 @@ public class Paket {
         Paket p = new Paket(60,45,70);
         //Paket p = new Paket(90,90,90);
         System.out.println("Paketklasse : "+p.getKlasse());
-        System.out.println("Preis : "+p.getPreis() + " €");
-        System.out.println("Volumen : "+p.getVolumen() + " l");
-        System.out.println("Fläche : "+p.getFlaeche() + " m2");
-        System.out.println("Gurtmass : "+p.getGurtmass() + " cm");
-        System.out.println("Würfel : "+p.istWuerfel());
+        System.out.println("Preis       : "+p.getPreis() + " €");
+        System.out.println("Volumen     : "+p.getVolumen() + " l");
+        System.out.println("Fläche      : "+p.getFlaeche() + " m2");
+        System.out.println("Gurtmass    : "+p.getGurtmass() + " cm");
+        System.out.println("Würfel      : "+p.istWuerfel());
     }
 
 }
