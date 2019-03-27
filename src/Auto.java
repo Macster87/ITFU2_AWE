@@ -1,14 +1,11 @@
 public class Auto {
 
-    private String eigentuemer;
-    private String farbe;
+    private String eigentuemer = "meiner";
+    private String farbe = "schwarz";
     private int richtung = 0;
     private double geschwindigkeit = 0;
 
-    public Auto() {
-        this.eigentuemer = "meiner";
-        this.farbe = "schwarz";
-    }
+    public Auto() {}
 
     public Auto(String eigentuemer, String farbe) {
         this.eigentuemer = eigentuemer;
