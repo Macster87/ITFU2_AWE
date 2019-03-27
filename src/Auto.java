@@ -16,8 +16,8 @@ public class Auto {
     }
 
     public void lenken(int value) {
-        if(value > 90 || value < -90) return;
-        richtung = value;
+        if(value + richtung > 90 || value + richtung < -90) return;
+        richtung = richtung + value;
     }
 
     public void lenken(String anweisung) {
