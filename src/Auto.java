@@ -20,10 +20,15 @@ public class Auto {
     public void lenken(String anweisung) {
         switch (anweisung) {
             case "links": richtung = -90;
+                break;
             case "rechts": richtung = 90;
+                break;
             case "halb links": richtung = -45;
+                break;
             case "halb rechts": richtung = 45;
+                break;
             case "geradeaus": richtung = 0;
+                break;
             default: richtung = 0;
         }
     }
