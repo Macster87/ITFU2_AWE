@@ -27,6 +27,7 @@ public class Auto {
             case "halb links": richtung = -45;
             case "halb rechts": richtung = 45;
             case "geradeaus": richtung = 0;
+            default: richtung = 0;
         }
     }
 
