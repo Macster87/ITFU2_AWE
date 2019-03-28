@@ -3,6 +3,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
+@SuppressWarnings("ManualArrayCopy")
+
 public class MyArrayList<T> implements List<String> {
 
     private String[] myArray;
@@ -11,56 +13,11 @@ public class MyArrayList<T> implements List<String> {
             Zu implementierende Methoden
     ############################################*/
 
-    public MyArrayList() {
+    MyArrayList() {
         myArray = new String[0];
     }
 
-    @Override
-    public int size() {
-        return myArray.length;
-    }
-
-    @Override
-    public boolean isEmpty() {
-        return myArray.length == 0;
-    }
-
-    @Override
-    public boolean contains(Object o) {
-        for (String s : myArray) {
-            if (s == o) return true;
-        }
-        return false;
-    }
-
-    @Override
-    public boolean add(String s) {
-        String[] nextArray = new String[myArray.length+1];
-        for(int i = 0; i < myArray.length; i++) {
-            nextArray[i] = myArray[i];
-        }
-        nextArray[nextArray.length-1] = s;
-        myArray = nextArray;
-        return true;
-    }
-
-    @Override
-    public boolean remove(Object o) {
-        int index = indexOf(o);
-        if(index < 0) {
-            return false;
-        } else {
-            remove(index);
-            return true;
-        }
-    }
-
-    @Override
-    public void clear() {
-        String[] nextArray = new String[0];
-        myArray = nextArray;
-    }
-
+    //### GET AND SET
     @Override
     public String get(int index) {
         return myArray[index];
@@ -71,6 +28,39 @@ public class MyArrayList<T> implements List<String> {
         String oldElement = myArray[index];
         myArray[index] = element;
         return oldElement;
+    }
+
+    //### SIZE
+    @Override
+    public int size() {
+        return myArray.length;
+    }
+
+    //### ISEMPTY
+    @Override
+    public boolean isEmpty() {
+        return myArray.length == 0;
+    }
+
+    //### CONTAINS
+    @Override
+    public boolean contains(Object o) {
+        for (Object s : myArray) {
+            if (s.equals(o)) return true;
+        }
+        return false;
+    }
+
+    //### ADD
+    @Override
+    public boolean add(String s) {
+        String[] nextArray = new String[myArray.length+1];
+        for(int i = 0; i < myArray.length; i++) {
+            nextArray[i] = myArray[i];
+        }
+        nextArray[nextArray.length-1] = s;
+        myArray = nextArray;
+        return true;
     }
 
     @Override
@@ -84,6 +74,18 @@ public class MyArrayList<T> implements List<String> {
             nextArray[i+1] = myArray[i];
         }
         myArray = nextArray;
+    }
+
+    //### REMOVE AND CLEAR
+    @Override
+    public boolean remove(Object o) {
+        int index = indexOf(o);
+        if(index == -1) {
+            return false;
+        } else {
+            remove(index);
+            return true;
+        }
     }
 
     @Override
@@ -101,9 +103,15 @@ public class MyArrayList<T> implements List<String> {
     }
 
     @Override
+    public void clear() {
+        myArray = new String[0];
+    }
+
+    //### INDEX FUNCTIONS
+    @Override
     public int indexOf(Object o) {
         for(int i = 0; i < myArray.length; i++) {
-            if(myArray[i] == o) {
+            if(myArray[i].equals(o)) {
                 return i;
             }
         }
@@ -114,7 +122,7 @@ public class MyArrayList<T> implements List<String> {
     public int lastIndexOf(Object o) {
         int result = -1;
         for(int i = 0; i < myArray.length; i++) {
-            if(myArray[i] == o) {
+            if(myArray[i].equals(o)) {
                 result = i;
             }
         }
@@ -175,6 +183,7 @@ public class MyArrayList<T> implements List<String> {
         throw new UnsupportedOperationException();
     }
 
+    @SuppressWarnings("TypeParameterHidesVisibleType")
     @Override
     public <T> T[] toArray(T[] a) {
         throw new UnsupportedOperationException();
