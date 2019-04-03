@@ -4,7 +4,6 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.junit.Ignore;
 
 /**
  * @author Arthur
@@ -38,7 +37,7 @@ public class MyArrayListTest {
 
     @Test
     public void testNewAndSize() {
-        MyArrayList<String> mal = new MyArrayList<String>();
+        MyArrayList<String> mal = new MyArrayList<>();
         assertEquals(0, mal.size());
     }
 
