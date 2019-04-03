@@ -221,6 +221,16 @@ public class MyArrayListTest {
     }
 
     @Test
+    public void testContains2() {
+        MyArrayList mal = new MyArrayList();
+        String s = "ei";
+        s += "ns";
+        mal.add(s);
+        assertTrue(mal.contains("eins"));
+        assertFalse(mal.contains("zwei"));
+    }
+
+    @Test
     public void testClearAndAdd() {
         MyArrayList<String> mal = new MyArrayList<>();
         mal.add("eins");
