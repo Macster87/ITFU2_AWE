@@ -27,7 +27,19 @@ public class MyLinkedList {
         this.tail = tail;
     }
 
-    public void addContainer(String inhalt) {
+    public String get(int target) {
+        Container position = head;
+        int i = 0;
+
+        while(i < target) {
+            i++;
+            position = position.getSuccessor();
+        }
+
+        return position.getContent();
+    }
+
+    public void add(String inhalt) {
         // Neuen Container erstellen
         Container newContainer = new Container(inhalt, tail, head);
 
@@ -42,7 +54,7 @@ public class MyLinkedList {
         tail = newContainer;
     }
 
-    public void removeContainer(Container target) {
+    public void remove(Container target) {
         if(target == head) {
             return;
         }
@@ -57,7 +69,22 @@ public class MyLinkedList {
         target.setPredecessor(null);
     }
 
-    public Container findContainer(String content) {
+    public boolean contains(String content) {
+        // Sucht einen Container anhand des Content-Strings.
+        // Wenn keiner gefunden wird, wird der Head zurückgegeben (der standardmäßig einen leeren Content hat)
+        Container position = head.getSuccessor();
+        int i = 0;
+        while(position != head) {
+            if(position.getContent().equals(content)) {
+                return true;
+            }
+            position = position.getSuccessor();
+            i++;
+        }
+        return false;
+    }
+
+    public Container indexOf(String content) {
         // Sucht einen Container anhand des Content-Strings.
         // Wenn keiner gefunden wird, wird der Head zurückgegeben (der standardmäßig einen leeren Content hat)
         Container position = head.getSuccessor();
@@ -69,10 +96,10 @@ public class MyLinkedList {
             position = position.getSuccessor();
             i++;
         }
-        return head;
+        return null;
     }
 
-    public int length() {
+    public int size() {
         Container position = head.getSuccessor();
         int i = 0;
         while(!position.getContent().equals("")) {
@@ -98,12 +125,12 @@ public class MyLinkedList {
 
     public static void main(String[] args) {
         MyLinkedList test = new MyLinkedList();
-        test.addContainer("eins");
-        test.addContainer("zwei");
-        test.addContainer("drei");
-        test.removeContainer(test.getTail().getPredecessor());
+        test.add("eins");
+        test.add("zwei");
+        test.add("drei");
+        test.remove(test.getTail().getPredecessor());
         test.printTrain();
-        System.out.println("Länge des Zuges: " + test.length());
+        System.out.println("Länge des Zuges: " + test.size());
         //System.out.print(test.getHead().toString());
         //System.out.print(test.getHead().getSuccessor().toString());
         //System.out.println(test.getHead().getSuccessor().toString());
