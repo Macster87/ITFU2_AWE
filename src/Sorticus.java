@@ -320,7 +320,7 @@ public class Sorticus {
         System.arraycopy(input, links.length, rechts, 0, input.length / 2);
         // Ohne Java.System Funktion:
         // for(int i = 0; i < arraysize_links; i++) links[i] = input[i];
-        // for(int i = 0; i < input.length/2; i++) rechts[i] = input[i+arraysize_links];
+        // for(int i = 0; i < input.size/2; i++) rechts[i] = input[i+arraysize_links];
 
         // Rekursiver Aufruf und Rückgabe
         return melt(mergeSort(links), mergeSort(rechts));
