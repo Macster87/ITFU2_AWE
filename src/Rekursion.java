@@ -1,5 +1,5 @@
 public class Rekursion {
-    void rek1(int n) {
+    static void rek1(int n) {
         if (n > 0) {
             System.out.println(n);
             rek1(n - 1);
@@ -8,14 +8,14 @@ public class Rekursion {
         }
     }
 
-    void rek2(int n) {
+    static void rek2(int n) {
         if (n > 0) {
             rek2(n - 1);
             System.out.println("Nach:" + n);
         }
     }
 
-    void rek3(int n) {
+    static void rek3(int n) {
         if (n > 0) {
             System.out.println("Vor:" + n);
             rek3(n - 1);
@@ -23,31 +23,38 @@ public class Rekursion {
         }
     }
 
-    int sum(int n) {
-        return n == 0 ? 0 : n+sum(n - 1);
+    static int sum(int n) {
+        return n == 0 ? 0 : n + sum(n - 1);
     }
 
-    int fakultaet(int n) {
+    static int fakultaet(int n) {
         return n == 1 ? 1 : n * fakultaet(n - 1);
     }
 
-    int whatever(int n) {
-        return n == 1 || n == 2 ? 1 : whatever(n-1) + whatever(n-2);
+    static int quersumme(int n) {
+        return n <= 9 ? n : quersumme( quersumme(n/10) + n%10);
+    }
+
+    static int fibonacci(int n) {
+        return n == 1 || n == 2 ? 1 : fibonacci(n-1) + fibonacci(n-2);
     }
 
     public static void main(String[] args) {
-        Rekursion r = new Rekursion();
-        /* System.out.println("\nEins:\n====");
-        r.rek1(5);
+        System.out.println("\nEins:\n====");
+        rek1(5);
         System.out.println("\nZwei:\n====");
-        r.rek2(5);
+        rek2(5);
         System.out.println("\nDrei:\n====");
-        r.rek3(5);
+        rek3(5);
 
         System.out.println("\nSum:\n====");
-        System.out.println(r.sum(4)); */
-        
-        //System.out.println( r.fakultaet(4));
-        System.out.println( r.whatever(12));
+        System.out.println(sum(4));
+
+        System.out.println("\nFakultät:\n====");
+        System.out.println( fakultaet(4));
+        System.out.println("\nFibonacci:\n====");
+        System.out.println( fibonacci(12));
+        System.out.println("\nQuersumme:\n====");
+        System.out.println(quersumme(321));
     }
 }
