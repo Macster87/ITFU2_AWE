@@ -39,6 +39,12 @@ public class Rekursion {
         return n == 1 || n == 2 ? 1 : fibonacci(n-1) + fibonacci(n-2);
     }
 
+    static int binominalkoeffizient(int n, int k) {
+        if(k > n || k < 0) {return 0;}
+        if((k == 0) || (n == k)) {return 1;}
+        return (n * binominalkoeffizient(n - 1, k - 1) / k);
+    }
+
     public static void main(String[] args) {
         System.out.println("\nEins:\n====");
         rek1(5);
@@ -56,5 +62,7 @@ public class Rekursion {
         System.out.println( fibonacci(12));
         System.out.println("\nQuersumme:\n====");
         System.out.println(quersumme(321));
+        System.out.println("\nBinominalkoeffizient:\n====");
+        System.out.println(binominalkoeffizient(49, 6));
     }
 }
