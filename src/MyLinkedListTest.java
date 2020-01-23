@@ -81,7 +81,6 @@ public class MyLinkedListTest {
         assertEquals("drei", res);
     }
 
-
 	@Test
     public void testAdd10() {
         MyLinkedList mll = new MyLinkedList();
