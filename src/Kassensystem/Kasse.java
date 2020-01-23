@@ -3,26 +3,22 @@ package Kassensystem;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import static java.lang.Long.*;
-
 public class Kasse {
 
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws EANException {
-        //System.out.println(zahlEingeben());
         System.out.println(validChecksum(zahlEingeben()));
-
     }
 
     static long zahlEingeben() throws EANException {
-        long ean = 0;
+        long ean;
 
         try {
             System.out.print("Zahl eingeben:");
             ean = scanner.nextLong();
             if(!validLength(ean)) {
-                throw new EANWRongLengthException();
+                throw new EANWrongLengthException();
             }
             if(!validChecksum(ean)) {
                 throw new EANWrongChecksumException();
@@ -35,7 +31,7 @@ public class Kasse {
         return ean;
     }
 
-    private static boolean validLength(long ean) {
+    static boolean validLength(long ean) {
         return Long.toString(ean).length() == 8 || Long.toString(ean).length() == 13;
     }
 
